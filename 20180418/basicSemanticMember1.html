@@ -1,0 +1,61 @@
+<!DOCTYPEhtml> <!-- basicSemanticMember1.html -->
+<html lang="ko">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <style>
+    header, nav, section, article, aside, footer
+    {border:1px solid gray; margin:5px; padding:8px;width:1000px;}
+    header img{width:990px;height:200px;}
+    section{width:1000px;float:left;}
+    section section{width:975px;float:left;}
+    section section video{position:relative;top:10px;left:100px;width:700px;height:300px;}
+    footer{height:50px;clear:both;}
+    nav ul{margin:0;padding:0;}
+    nav ul li{display:inline;margin:5px;}
+    aside ul{margin:0;padding:0;}
+    aside ul li{display:block;margin:5px;}
+    aside ul li img{width:50px;height:50px;}
+    a:link{
+    color:blue;background-color:transparent;text-decoration:none;}
+    a:visited{
+    color:pink;background-color:transparent;text-decoration:none;}
+    a:hover{
+      color:red;background-color:transparent;text-decoration:underline;}
+    a:active{
+      color:blue;background-color:transparent;text-decoration:none;}
+    </style>
+    <title>시멘틱 학습</title></head>
+      
+  <body>
+    <header>
+    <h2><a href="http://lolizoa11.github.io/2/basicSemantic4.html">실습을 환영합니다</a></h2>
+    <ul id="headMenu">
+    <li>로그인|</li>
+    <li><a href="http://lolizoa11.github.io/2/basicSemanticMember1.html">회원가입</a>|</li>
+    <li>사이트맵<li>
+    <img src="../20180404/scene.png" alt="히말라야"/>
+    </header>
+    <nav>
+        <ul>
+    <li><a href="http://www.w3.org/TR/html5/" taget="_blank">HTML5</a></li>
+    <li><a href="http:jquery.com/" taget="_blank">JQuery</a></li>
+    <li><a href="http://jquerymobile.com/" taget="_blank">JQueryMibile</a></li>
+    <li><a href="../jsp/jspintro.html">JSP</a></li></ul>
+    </nav>
+
+<section>  <!-- main -->
+  <section id="memverArea">
+  <form id="memberForm" action="jsp.dju.ac.kr/lolizoa11/RegCheack.jsp" method="post">
+  <filedset><legend>회원정보</legend>
+    <filedset><legend>이름/이메일</legend>
+    <label for="stud_name">이름</legend>
+    <input id="stud_name"type="text"name="stud_name"size="20"maxlength="50"required/><br/>
+    <label for="stud_email">이메일</label>
+    <input id="stud_email"type="text"name="stud_email"size="20"maxlength="50"/><br/>
+    <label for="stud_phone">전화번호</label>
+    <input id="stud_phone"type="text"name="stud_phone"size="20"maxlength="50"/><br/>
+</fieldset>
+    <filedset><legend>아이디/비밀번호</legend>
+    <label for="stud_id">아이디</legend>
+    <input id="stud_name"type="text"name="stud_name"size="20"maxlength="50"required/><br/>
